@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   translate(width/2 ,height/2)
-  let num_triangles = 360
+  let num_triangles = 300
   for (i=0; i <num_triangles; i ++){
     rotate(radians(360/num_triangles))
     push()
@@ -17,7 +17,7 @@ function draw() {
     tri(180)
     pop()
   }
-  save("triangles_777.svg");
+  // save("triangles_777.svg");
   noLoop();
 }
 

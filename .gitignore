@@ -153,3 +153,6 @@ token.json
 
 #videos
 *.mp4
+
+#config
+jsconfig.json

@@ -8,18 +8,16 @@ function setup() {
 
 function draw() {
   translate(width/2 ,height/2)
-  let num_triangles = 720
+  let num_triangles = 200
   for (i=0; i <num_triangles; i ++){
     rotate(radians(360/num_triangles))
     push()
-    // translate(200, 0)
-    rotate(radians(4*i*360/num_triangles))
+    rotate(radians(8*i*360/num_triangles))
     for (radius = 0; radius < 200; radius +=50){
       ellipse(radius, radius, radius , radius/3)
     }
     pop()
   }
-  save("radius.svg");
   noLoop();
 }
 
