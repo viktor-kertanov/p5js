@@ -6,9 +6,13 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/230118/radius')
+# @app.route('/230118/radius')
+# def radius():
+#     return render_template('radius.html')
+
+@app.route('/duchamp')
 def radius():
-    return render_template('radius.html')
+    return render_template('duchamp.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

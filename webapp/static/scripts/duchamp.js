@@ -1,6 +1,6 @@
 //https://docs.google.com/spreadsheets/d/1uiyXboTq1iXrwlpmLfkmAMbzz44ma4gB_wGAdDu2Ivo/edit#gid=0
 
-r = 450
+r = 350
 r_invisible = 0.91677*r
 r_big_black = 0.8333*r
 r_big_radian = 0.7167*r
@@ -26,7 +26,7 @@ points = []
 
 function setup(){
     
-    createCanvas(1000, 1000);
+    createCanvas(700, 700);
     frameRate(30);
 }
 
@@ -73,7 +73,6 @@ function draw() {
     
     //Now drawing a big group inside big radian circle
     noFill()
-    strokeWeight(2)
     for (let i = 0; i<6; i+=1){
       cur_r = r_big_group*(1-r_delta_big_group*i);
       b_group_amend = r_invisible - cur_r;
